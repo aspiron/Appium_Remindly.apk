@@ -1,10 +1,8 @@
 package com.telran.remindly.tests;
 
-import org.openqa.selenium.By;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class MainPageTests extends TestBase {
+public class MainScreenTests extends TestBase {
 
     @Test
     public void launchAppTest() {
@@ -13,12 +11,12 @@ public class MainPageTests extends TestBase {
 
     @Test
     public void centralElementTest() {
-        isCentralElementPresent();
+        app.isCentralElementPresent();
     }
 
     @Test
     public void licencePresenceTest() {
-        isLicencePresent();
+        app.isLicencePresent();
     }
 
 
